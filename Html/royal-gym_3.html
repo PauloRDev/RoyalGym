@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Gym – Forge Your Legacy</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/RoyalGym/Layout/style.css">
+</head>
+
+<body>
+
+  <!-- Cursor (desktop) -->
+  <div class="cursor" id="js-cursor"></div>
+  <div class="cursor__ring" id="js-cursor-ring"></div>
+
+  <!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+  <nav class="nav">
+    <a class="nav__logo" href="#">
+      <div class="nav__logo-icon">
+        <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="22,2 26,14 40,14 29,22 33,36 22,28 11,36 15,22 4,14 18,14" fill="none" stroke="#D4A843"
+            stroke-width="1.5" />
+          <polygon points="22,8 25,16 34,16 27,21 30,30 22,25 14,30 17,21 10,16 19,16" fill="#D4A843" opacity=".2" />
+          <circle cx="22" cy="22" r="4" fill="#D4A843" />
+        </svg>
+      </div>
+      <div>
+        <div class="nav__logo-text">ROYAL <em>GYM</em></div>
+        <span class="nav__logo-sub">Elite Training Center</span>
+      </div>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#services">Programs</a></li>
+      <li><a href="#about">Facility</a></li>
+      <li><a href="#pricing">Membership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#pricing" class="btn btn--electric nav__cta">Start Free Trial</a>
+
+    <button class="nav__hamburger" id="js-hamburger" aria-label="Toggle menu">
+      <span class="nav__hamburger-bar"></span>
+      <span class="nav__hamburger-bar"></span>
+      <span class="nav__hamburger-bar"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav__drawer" id="js-drawer">
+    <ul>
+      <li><a href="#services">Programs</a></li>
+      <li><a href="#about">Facility</a></li>
+      <li><a href="#pricing">Membership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#pricing" class="btn btn--electric">Start Free Trial</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__bg-image"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__orb"></div>
+    <div class="hero__ring"></div>
+    <div class="hero__stripe"></div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <div class="hero__eyebrow-line"></div>
+        <span class="hero__badge">
+          <svg width="10" height="10" viewBox="0 0 10 10">
+            <polygon points="5,0 6,3.5 10,3.5 7,5.7 8.1,9.5 5,7.5 1.9,9.5 3,5.7 0,3.5 4,3.5" fill="#D4A843" />
+          </svg>
+          Est. 2010 &nbsp;·&nbsp; Elite Performance
+        </span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line--white">FORGE</span>
+        <span class="hero__title-line--gold">YOUR</span>
+        <span class="hero__title-line--blue">LEGACY.</span>
+      </h1>
+
+      <p class="hero__body">Step into the arena where champions are made. Royal Gym fuses world-class equipment, elite
+        coaching and an atmosphere of absolute excellence to push you beyond every limit you've ever known.</p>
+
+      <div class="hero__actions">
+        <a href="#pricing" class="btn btn--gold">Claim Your Spot</a>
+        <a href="#about" class="btn btn--ghost">Tour the Facility</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__number">3K+</div>
+          <div class="stat__label">Active Members</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">48</div>
+          <div class="stat__label">Elite Coaches</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">12</div>
+          <div class="stat__label">Years of Glory</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     RIBBON
+══════════════════════════════════════════ -->
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon__track">
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Strength Training
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Combat Sports
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>HIIT &amp; Cardio
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Recovery &amp; Wellness
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Personal Training
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Nutrition Coaching
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>24/7 Access
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Olympic Equipment
+      </div>
+      <!-- duplicated for seamless loop -->
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Strength Training
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Combat Sports
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>HIIT &amp; Cardio
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Recovery &amp; Wellness
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Personal Training
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Nutrition Coaching
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>24/7 Access
+      </div>
+      <div class="ribbon__item">
+        <div class="ribbon__dot"></div>Olympic Equipment
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="services__header fade-up">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow__line"></div>
+        What We Offer
+      </div>
+      <h2 class="section-title">OUR TRAINING PROGRAMS</h2>
+    </div>
+
+    <div class="services__grid">
+
+      <div class="service-card fade-up fade-up--delay-1">
+        <div class="service-card__number" aria-hidden="true">01</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="12" y="13.5" width="8" height="5" rx="1.5" />
+            <rect x="4" y="10" width="3.5" height="12" rx="1.5" />
+            <rect x="2" y="11.5" width="2.5" height="9" rx="1" />
+            <rect x="24.5" y="10" width="3.5" height="12" rx="1.5" />
+            <rect x="27.5" y="11.5" width="2.5" height="9" rx="1" />
+            <line x1="7.5" y1="16" x2="12" y2="16" />
+            <line x1="20" y1="16" x2="24.5" y2="16" />
+          </svg>
+        </div>
+        <h3 class="service-card__title">Strength &amp; Powerlifting</h3>
+        <p class="service-card__body">Structured Olympic and powerlifting programs built on proven periodization.
+          Certified S&amp;C coaches guide every rep toward maximum output.</p>
+        <a href="#" class="service-card__link">Learn More →</a>
+      </div>
+
+      <div class="service-card fade-up fade-up--delay-2">
+        <div class="service-card__number" aria-hidden="true">02</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M7 23C4.5 23 3.5 20.5 3.5 18V12.5C3.5 9.5 5.5 7.5 8.5 7.5L11 7.5C11.5 5.5 13 4.5 15.5 4.5L19.5 4.5C22 4.5 24 6.5 24 9V12.5C26 12.5 28.5 13.5 28.5 17C28.5 20.5 26 23 22.5 23Z" />
+            <line x1="7" y1="23" x2="7" y2="27.5" />
+            <line x1="22.5" y1="23" x2="22.5" y2="27.5" />
+            <line x1="7" y1="27.5" x2="22.5" y2="27.5" />
+            <line x1="3.5" y1="12.5" x2="11" y2="12.5" />
+            <line x1="11" y1="7.5" x2="11" y2="15" />
+          </svg>
+        </div>
+        <h3 class="service-card__title">Combat Sports</h3>
+        <p class="service-card__body">Boxing, Muay Thai and BJJ for every level. Build discipline, explosive power and
+          ring-tested confidence with our championship fight coaches.</p>
+        <a href="#" class="service-card__link">Learn More →</a>
+      </div>
+
+      <div class="service-card fade-up fade-up--delay-3">
+        <div class="service-card__number" aria-hidden="true">03</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="19,3 11,17 16.5,17 14,29 22,15 16.5,15" />
+            <circle cx="16" cy="16" r="13" stroke-width="1.2" opacity=".3" />
+            <circle cx="16" cy="16" r="9" stroke-width=".8" opacity=".15" />
+          </svg>
+        </div>
+        <h3 class="service-card__title">HIIT &amp; Functional</h3>
+        <p class="service-card__body">Explosive 45-minute circuits that incinerate fat, spike cardiovascular capacity
+          and build the athletic engine your body was designed for.</p>
+        <a href="#" class="service-card__link">Learn More →</a>
+      </div>
+
+      <div class="service-card fade-up fade-up--delay-4">
+        <div class="service-card__number" aria-hidden="true">04</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M16 26C16 26 7 21 7 13C7 9 10 6.5 16 6.5C22 6.5 25 9 25 13C25 21 16 26 16 26Z" />
+            <path d="M16 13C16 13 10 10.5 7 6C10 5 14 7.5 16 13Z" opacity=".6" />
+            <path d="M16 13C16 13 22 10.5 25 6C22 5 18 7.5 16 13Z" opacity=".6" />
+            <line x1="16" y1="26" x2="16" y2="30" />
+            <line x1="12.5" y1="30" x2="19.5" y2="30" />
+          </svg>
+        </div>
+        <h3 class="service-card__title">Recovery &amp; Mobility</h3>
+        <p class="service-card__body">Guided yoga, deep tissue protocols and ice-bath recovery sessions. Because
+          champions know rest is where real growth happens.</p>
+        <a href="#" class="service-card__link">Learn More →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     PHOTO STRIP
+══════════════════════════════════════════ -->
+  <div class="photo-strip" aria-hidden="true">
+    <div class="photo-strip__item"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80"
+        alt="Weights rack" /></div>
+    <div class="photo-strip__item"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80"
+        alt="Athlete training" /></div>
+    <div class="photo-strip__item"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&q=80"
+        alt="Boxing" /></div>
+    <div class="photo-strip__item"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80"
+        alt="Yoga recovery" /></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about__gallery fade-up">
+      <div class="gallery-img gallery-img--tall">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=80" alt="Gym floor" />
+      </div>
+      <div class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500&q=80" alt="Dumbbells" />
+      </div>
+      <div class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="Athlete" />
+        <div class="gallery-img__badge">
+          <div class="gallery-img__badge-number">12</div>
+          <div class="gallery-img__badge-label">Years of<br>Excellence</div>
+        </div>
+      </div>
+      <div class="about__gallery-line"></div>
+    </div>
+
+    <div class="about__content fade-up fade-up--delay-2">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow__line"></div>
+        Why Royal Gym
+      </div>
+      <h2 class="section-title">THE MOST TRUSTED GYM FOR YOUR TRANSFORMATION</h2>
+      <p class="about__body">At Royal Gym, we don't just build bodies — we forge champions. Our 12,000 sq ft facility is
+        packed with premium strength, cardio and combat equipment calibrated for peak performance.</p>
+      <p class="about__body">Every coach holds international certifications and brings real competitive experience. No
+        templates. No shortcuts. Just elite, personalised coaching.</p>
+
+      <ul class="feature-list">
+        <li class="feature-list__item">
+          <div class="feature-list__icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#60A5FA" stroke-width="1.6" stroke-linecap="round">
+              <rect x="2" y="6" width="3" height="6" rx="1" />
+              <rect x="11" y="6" width="3" height="6" rx="1" />
+              <rect x="5" y="7" width="6" height="4" rx="1" />
+            </svg>
+          </div>
+          Olympic-Grade Free Weight Platforms
+        </li>
+        <li class="feature-list__item">
+          <div class="feature-list__icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#60A5FA" stroke-width="1.6" stroke-linecap="round">
+              <circle cx="8" cy="8" r="5" />
+              <polyline points="8,5 8,8 10,10" />
+            </svg>
+          </div>
+          24/7 Access for Premium Members
+        </li>
+        <li class="feature-list__item">
+          <div class="feature-list__icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#60A5FA" stroke-width="1.6" stroke-linecap="round">
+              <path d="M8 2L10 6L14 6L11 9L12 13L8 11L4 13L5 9L2 6L6 6Z" />
+            </svg>
+          </div>
+          Personalised Training &amp; Nutrition Plans
+        </li>
+        <li class="feature-list__item">
+          <div class="feature-list__icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#60A5FA" stroke-width="1.6" stroke-linecap="round">
+              <path d="M3 13C3 10 5 8 8 8C11 8 13 10 13 13" />
+              <circle cx="8" cy="5" r="2.5" />
+            </svg>
+          </div>
+          48 Certified Elite Coaches On Staff
+        </li>
+        <li class="feature-list__item">
+          <div class="feature-list__icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#60A5FA" stroke-width="1.6" stroke-linecap="round">
+              <path d="M3 12C3 8 5 5 8 4C11 5 13 8 13 12" />
+              <path d="M6 12C6 10 7 9 8 9C9 9 10 10 10 12" />
+            </svg>
+          </div>
+          Recovery Lounge — Ice Bath &amp; Sauna
+        </li>
+      </ul>
+
+      <a href="#pricing" class="btn btn--gold">View Membership Plans</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     PRICING  (dynamic tabs)
+══════════════════════════════════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="fade-up">
+      <div class="section-eyebrow" style="justify-content:center">
+        <div class="section-eyebrow__line"></div>
+        Membership
+      </div>
+      <h2 class="section-title">PLANS BUILT FOR YOUR GOALS</h2>
+      <p class="pricing__subtitle">No lock-in contracts. No hidden fees. Upgrade or pause any time.</p>
+    </div>
+
+    <div class="pricing__tabs-wrap">
+      <div class="pricing__tabs" role="tablist">
+        <button class="pricing__tab is-active" data-period="monthly" role="tab" aria-selected="true">Monthly</button>
+        <button class="pricing__tab" data-period="quarterly" role="tab" aria-selected="false">Quarterly</button>
+        <button class="pricing__tab" data-period="semiannual" role="tab" aria-selected="false">Semi-Annual</button>
+        <button class="pricing__tab" data-period="annual" role="tab" aria-selected="false">Annual</button>
+      </div>
+    </div>
+
+    <div class="pricing__grid fade-up" id="js-pricing-grid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════ -->
+  <section class="testimonials">
+    <div class="fade-up">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow__line"></div>
+        Member Stories
+      </div>
+      <h2 class="section-title">WHAT OUR MEMBERS SAY</h2>
+    </div>
+
+    <div class="testimonials__grid">
+      <div class="testi-card fade-up fade-up--delay-1">
+        <div class="testi-card__quote-mark" aria-hidden="true">"</div>
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">Royal Gym completely changed my life. In 8 months I dropped 30kg and built a level
+          of confidence I never thought possible. The coaches genuinely care about every member.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">MT</div>
+          <div>
+            <div class="testi-card__name">Marcus T.</div>
+            <div class="testi-card__role">Premium Member · 2 years</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-up fade-up--delay-2">
+        <div class="testi-card__quote-mark" aria-hidden="true">"</div>
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">The facility is world-class. I've trained in three countries and Royal Gym stands
+          above them all — the equipment, atmosphere, and unmatched community energy.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">PS</div>
+          <div>
+            <div class="testi-card__name">Priya S.</div>
+            <div class="testi-card__role">Gold Member · 14 months</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-up fade-up--delay-3">
+        <div class="testi-card__quote-mark" aria-hidden="true">"</div>
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">I competed in my first amateur fight at 42. The combat program pushed me further
+          than I ever pushed myself. Don't waste time anywhere else — this is the real deal.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">JR</div>
+          <div>
+            <div class="testi-card__name">James R.</div>
+            <div class="testi-card__role">Gold Member · 3 years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════ -->
+  <section class="cta">
+    <div class="cta__inner fade-up">
+      <h2 class="cta__title">READY TO TRAIN LIKE<br><em>ROYALTY?</em></h2>
+      <p class="cta__body">Your first week is on us. No commitments, no pressure. Just elite training, world-class
+        coaches and a facility built for champions.</p>
+      <div class="cta__actions">
+        <a href="#pricing" class="btn btn--gold">Start Your Free Week</a>
+        <a href="#contact" class="btn btn--ghost">Book a Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <a class="nav__logo" href="#">
+          <div class="nav__logo-icon">
+            <svg viewBox="0 0 44 44" fill="none">
+              <polygon points="22,2 26,14 40,14 29,22 33,36 22,28 11,36 15,22 4,14 18,14" fill="none" stroke="#D4A843"
+                stroke-width="1.5" />
+              <circle cx="22" cy="22" r="4" fill="#D4A843" />
+            </svg>
+          </div>
+          <div>
+            <div class="nav__logo-text">ROYAL <em>GYM</em></div>
+            <span class="nav__logo-sub">Elite Training Center</span>
+          </div>
+        </a>
+        <p class="footer__brand-body">We exist to build champions. From your first rep to your biggest win — Royal Gym
+          is where transformation lives and legends are forged.</p>
+        <div class="footer__socials">
+          <a class="footer__social-link" href="#">in</a>
+          <a class="footer__social-link" href="#">X</a>
+          <a class="footer__social-link" href="#">YT</a>
+          <a class="footer__social-link" href="#">IG</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Explore</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Facility</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Programs</h4>
+        <ul>
+          <li><a href="#">Strength &amp; Powerlifting</a></li>
+          <li><a href="#">Combat Sports</a></li>
+          <li><a href="#">HIIT &amp; Functional</a></li>
+          <li><a href="#">Yoga &amp; Mobility</a></li>
+          <li><a href="#">Personal Training</a></li>
+          <li><a href="#">Nutrition Coaching</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Stay Connected</h4>
+        <p class="footer__newsletter-body">Exclusive offers, training tips and member news straight to your inbox.</p>
+        <div class="footer__sub-form">
+          <input class="footer__sub-input" type="email" placeholder="your@email.com" />
+          <button class="footer__sub-btn">→</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__watermark" aria-hidden="true">ROYAL GYM</div>
+
+    <div class="footer__bottom">
+      <p>© 2025 Royal Gym. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Service · Cookie Policy</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════ -->
+  <script>
+    /* ── 1. PRICING DATA ─────────────────────────────────────────
+       Each period defines its own prices, period text, and
+       per-plan feature list. Corporate always shows "Flexible".
+    ────────────────────────────────────────────────────────────── */
+    const PRICING_DATA = {
+      monthly: {
+        label: 'per month · billed monthly',
+        savings: null,
+        plans: [
+          {
+            id: 'basic', name: 'Basic', price: '$49', featured: false,
+            features: ['Full gym floor access', 'Locker room & showers', '2 group classes / week', 'Fitness assessment']
+          },
+          {
+            id: 'premium', name: 'Premium', price: '$99', featured: true,
+            features: ['Everything in Basic', 'Unlimited group classes', '1 PT session / month', 'Nutrition consultation', 'Recovery lounge access']
+          },
+          {
+            id: 'gold', name: 'Gold', price: '$179', featured: false,
+            features: ['Everything in Premium', '4 PT sessions / month', 'Custom training program', '24/7 gym access', 'Full meal plan & macros']
+          },
+          {
+            id: 'corporate', name: 'Corporate', price: null, featured: false,
+            features: ['Team memberships (10+)', 'Dedicated coach allocation', 'Private training windows', 'Branded wellness program', 'Monthly progress reports']
+          }
+        ]
+      },
+      quarterly: {
+        label: 'per month · billed every 3 months',
+        savings: 'Save 10%',
+        plans: [
+          {
+            id: 'basic', name: 'Basic', price: '$44', featured: false,
+            features: ['Full gym floor access', 'Locker room & showers', '3 group classes / week', 'Fitness assessment']
+          },
+          {
+            id: 'premium', name: 'Premium', price: '$89', featured: true,
+            features: ['Everything in Basic', 'Unlimited group classes', '2 PT sessions / month', 'Nutrition consultation', 'Recovery lounge access']
+          },
+          {
+            id: 'gold', name: 'Gold', price: '$161', featured: false,
+            features: ['Everything in Premium', '5 PT sessions / month', 'Custom training program', '24/7 gym access', 'Full meal plan & macros']
+          },
+          {
+            id: 'corporate', name: 'Corporate', price: null, featured: false,
+            features: ['Team memberships (10+)', 'Dedicated coach allocation', 'Private training windows', 'Quarterly strategy review', 'Priority booking']
+          }
+        ]
+      },
+      semiannual: {
+        label: 'per month · billed every 6 months',
+        savings: 'Save 15%',
+        plans: [
+          {
+            id: 'basic', name: 'Basic', price: '$42', featured: false,
+            features: ['Full gym floor access', 'Locker room & showers', '4 group classes / week', 'Fitness assessment + re-test']
+          },
+          {
+            id: 'premium', name: 'Premium', price: '$84', featured: true,
+            features: ['Everything in Basic', 'Unlimited group classes', '2 PT sessions / month', 'Nutrition consultation', 'Recovery lounge + spa access']
+          },
+          {
+            id: 'gold', name: 'Gold', price: '$152', featured: false,
+            features: ['Everything in Premium', '6 PT sessions / month', 'Custom training program', '24/7 gym access', 'Meal plan + weekly check-in']
+          },
+          {
+            id: 'corporate', name: 'Corporate', price: null, featured: false,
+            features: ['Team memberships (10+)', 'Dedicated coach allocation', 'Private training windows', '6-month wellness report', 'Discounted guest passes']
+          }
+        ]
+      },
+      annual: {
+        label: 'per month · billed annually',
+        savings: 'Save 20%',
+        plans: [
+          {
+            id: 'basic', name: 'Basic', price: '$39', featured: false,
+            features: ['Full gym floor access', 'Locker room & showers', 'Unlimited group classes', 'Annual fitness assessment']
+          },
+          {
+            id: 'premium', name: 'Premium', price: '$79', featured: true,
+            features: ['Everything in Basic', 'Unlimited group classes', '3 PT sessions / month', 'Full nutrition program', 'Recovery lounge + spa access']
+          },
+          {
+            id: 'gold', name: 'Gold', price: '$143', featured: false,
+            features: ['Everything in Premium', '8 PT sessions / month', 'Custom training + diet plan', '24/7 gym access', 'Quarterly body composition scan']
+          },
+          {
+            id: 'corporate', name: 'Corporate', price: null, featured: false,
+            features: ['Team memberships (10+)', 'Dedicated coach allocation', 'Private training windows', 'Annual wellness summit', 'Free guest day passes']
+          }
+        ]
+      }
+    };
+
+    function buildPricingCards(period) {
+      const data = PRICING_DATA[period];
+      const grid = document.getElementById('js-pricing-grid');
+      grid.innerHTML = '';
+
+      data.plans.forEach(plan => {
+        const isCorporate = plan.price === null;
+        const cardClass = `price-card${plan.featured ? ' price-card--featured' : ''}`;
+
+        const featuresHTML = plan.features.map(f =>
+          `<li class="price-card__feature">
+        <span class="price-card__check" aria-hidden="true">✦</span>${f}
+      </li>`
+        ).join('');
+
+        const savingsTag = (data.savings && plan.featured)
+          ? `<div class="price-card__popular">${data.savings}</div>` : '';
+
+        const priceBlock = isCorporate
+          ? `<span class="price-card__flexible-label">Flexible</span>
+         <div class="price-card__period">custom billing · 10+ members</div>`
+          : `<div class="price-card__amount">${plan.price}</div>
+         <div class="price-card__period">${data.label}</div>`;
+
+        const btnHTML = isCorporate
+          ? `<a href="#contact" class="btn btn--ghost btn--block">Contact Us</a>`
+          : plan.featured
+            ? `<a href="#" class="btn btn--gold btn--block">Get Started</a>`
+            : `<a href="#" class="btn btn--ghost btn--block">Get Started</a>`;
+
+        const card = document.createElement('div');
+        card.className = cardClass;
+        card.innerHTML = `
+      ${savingsTag}
+      <div class="price-card__plan">${plan.name}</div>
+      ${priceBlock}
+      <div class="price-card__divider"></div>
+      <ul class="price-card__features">${featuresHTML}</ul>
+      ${btnHTML}
+    `;
+        grid.appendChild(card);
+      });
+
+      // Re-observe new cards for fade-up
+      grid.querySelectorAll('.price-card').forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = `opacity .4s ease ${i * 0.07}s, transform .4s ease ${i * 0.07}s`;
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }));
+      });
+    }
+
+    /* ── 2. PRICING TABS ───────────────────────────────────────── */
+    document.querySelectorAll('.pricing__tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.pricing__tab').forEach(t => {
+          t.classList.remove('is-active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+        buildPricingCards(tab.dataset.period);
+      });
+    });
+
+    // Init with monthly
+    buildPricingCards('monthly');
+
+    /* ── 3. SCROLL FADE-UP ─────────────────────────────────────── */
+    const scrollObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => scrollObserver.observe(el));
+
+    /* ── 4. MOBILE HAMBURGER ───────────────────────────────────── */
+    const hamburger = document.getElementById('js-hamburger');
+    const drawer = document.getElementById('js-drawer');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-open');
+      drawer.classList.toggle('is-open');
+    });
+
+    // Close drawer when a link is clicked
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('is-open');
+        drawer.classList.remove('is-open');
+      });
+    });
+
+    /* ── 5. CUSTOM CURSOR (desktop only) ──────────────────────── */
+    if (window.innerWidth > 1024) {
+      const cur = document.getElementById('js-cursor');
+      const ring = document.getElementById('js-cursor-ring');
+      let mx = 0, my = 0, rx = 0, ry = 0;
+
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cur.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
+      });
+
+      (function animRing() {
+        rx += (mx - rx) * .12;
+        ry += (my - ry) * .12;
+        ring.style.transform = `translate(${rx - 18}px, ${ry - 18}px)`;
+        requestAnimationFrame(animRing);
+      })();
+
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => { cur.style.transform += ' scale(2.5)'; ring.style.opacity = '0'; });
+        el.addEventListener('mouseleave', () => { cur.style.transform = cur.style.transform.replace(' scale(2.5)', ''); ring.style.opacity = '1'; });
+      });
+    }
+  </script>
+</body>
+
+</html>
