@@ -158,3 +158,8 @@ This project is intended for **evaluation purposes** as part of a technical test
 
 ---
 
+## Deploy 
+You could access the project directly here:
+
+https://royalgymdz.netlify.app/
+---
