@@ -137,8 +137,7 @@ The project uses **BEM (Block Element Modifier)** for scalable and maintainable 
 ```
 RoyalGym/
 │
-├── Html/
-│   └── royal-gym_3.html
+│   └── index.html
 ├── Layout/
 │   └── style.css
 ```
